@@ -12,9 +12,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: cucumber/cucumber-build:0.12.0
 
     steps:
       - uses: actions/checkout@v3
-      - name: Make
-        run: make
+      - run: cd go && make
