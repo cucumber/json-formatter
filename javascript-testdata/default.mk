@@ -9,46 +9,28 @@ NPM_MODULE = $(shell cat package.json | jq .name --raw-output)
 default: .tested
 .PHONY: default
 
-../../node_modules ../../package-lock.json: package.json
-	cd ../.. && npm install
+node_modules package-lock.json: package.json
+	npm install
 
 .codegen:
 	touch $@
 
 .tested: .tested-npm .built
 
-.built: $(TYPESCRIPT_SOURCE_FILES) ../../node_modules ../../package-lock.json .codegen
-	pushd ../.. && \
+.built: $(TYPESCRIPT_SOURCE_FILES) node_modules package-lock.json .codegen
 	npm run build && \
-	popd && \
 	touch $@
 
-.tested-npm: $(TYPESCRIPT_SOURCE_FILES) ../../node_modules ../../package-lock.json .codegen
+.tested-npm: $(TYPESCRIPT_SOURCE_FILES) node_modules package-lock.json .codegen
 	npm run test
 	touch $@
 
 pre-release: clean update-version update-dependencies default
 .PHONY: pre-release
 
-update-dependencies: ../../node_modules ../../package-lock.json
-	../../node_modules/.bin/npm-check-updates --upgrade --reject hast-util-sanitize,@types/node,react-markdown,rehype-raw,rehype-sanitize,remark-gfm
+update-dependencies: node_modules package-lock.json
+	node_modules/.bin/npm-check-updates --upgrade --reject hast-util-sanitize,@types/node,react-markdown,rehype-raw,rehype-sanitize,remark-gfm
 .PHONY: update-dependencies
-
-update-version:
-ifeq ($(IS_TESTDATA),-testdata)
-	# no-op
-else
-ifdef NEW_VERSION
-	npm --no-git-tag-version --allow-same-version version "$(NEW_VERSION)"
-	# Update all npm packages that depend on us
-	pushd ../.. && \
-		./scripts/npm-each update_npm_dependency_if_exists package.json "$(NPM_MODULE)" "$(NEW_VERSION)"
-else
-	@echo -e "\033[0;31mNEW_VERSION is not defined. Can't update version :-(\033[0m"
-	exit 1
-endif
-endif
-.PHONY: update-version
 
 publish: .codegen
 ifeq ($(IS_TESTDATA),-testdata)
@@ -73,7 +55,7 @@ clean-javascript:
 .PHONY: clean-javascript
 
 clobber: clean
-	rm -rf node_modules ../../node_modules
+	rm -rf node_modules
 .PHONY: clobber
 
 ### COMMON stuff for all platforms
