@@ -1,6 +1,6 @@
 include default.mk
 
-GOLDEN_JSONS = $(call rwildcard,../ruby-testdata/features,*.json)
+GOLDEN_JSONS = $(wildcard ../ruby-testdata/features/**/*.json)
 GENERATED_JSONS = $(patsubst ../ruby-testdata/features/%.json,acceptance/%.json,$(GOLDEN_JSONS))
 
 .DELETE_ON_ERROR:
