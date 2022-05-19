@@ -1,2 +1,2 @@
-LANGUAGES ?= ruby-testdata javascript-testdata go
+LANGUAGES ?= ruby-testdata go
 include default.mk
