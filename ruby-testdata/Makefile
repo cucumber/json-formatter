@@ -1,12 +1,12 @@
-include default.mk
-
 CCK_PATH = $(shell bundle exec ruby -e "puts File.expand_path(File.join(Cucumber::CompatibilityKit.examples_path, '..'))" -r 'cucumber-compatibility-kit')
-CCK_FEATURES=$(call rwildcard,$(CCK_PATH)/features,*.feature)
+CCK_FEATURES=$(wildcard $(CCK_PATH)/features/**/*.feature)
 FEATURES=$(patsubst $(CCK_PATH)/%,%,$(CCK_FEATURES))
 STEP_DEFINITIONS=$(patsubst %,%.rb,$(FEATURES))
 JSONS_GOLDEN  = $(patsubst features/%,features/%.json,$(FEATURES))
+NDJSONS = $(patsubst features/%,features/%.ndjson,$(FEATURES))
 
-.tested: $(JSONS_GOLDEN)
+default: $(JSONS_GOLDEN) $(NDJSONS)
+.PHONY: default
 
 features/%.json: features/%-unprocessed.json
 	cat $< | \
@@ -41,5 +41,9 @@ features/%.feature: $(CCK_PATH)/features/%.feature
 	mkdir -p $(@D)
 	cp $(patsubst %,$(CCK_PATH)/%,$@) $@
 
+features/%.ndjson: $(CCK_PATH)/features/%.ndjson
+	mkdir -p $(@D)
+	cp $(patsubst %,$(CCK_PATH)/%,$@) $@
+
 clean:
-	rm -f $(FEATURES) $(STEP_DEFINITIONS) $(JSONS_GOLDEN) features/all.json
+	rm -f $(FEATURES) $(STEP_DEFINITIONS) $(JSONS_GOLDEN) $(NDJSONS) features/all.json
