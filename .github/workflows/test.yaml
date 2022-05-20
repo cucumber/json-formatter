@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v2
-      - run: cd go && make
+      - run: make
