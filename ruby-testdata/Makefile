@@ -7,8 +7,12 @@ JSONS_GOLDEN  = $(foreach feature, $(SUPPORTED_FEATURES), features/$(feature)/$(
 NDJSONS = $(patsubst %.json,%.ndjson,$(JSONS_GOLDEN))
 BUNDLE_GEMFILE=$(shell pwd)/Gemfile 
 
-default: $(JSONS_GOLDEN) $(NDJSONS)
+default: $(JSONS_GOLDEN) $(NDJSONS) Gemfile.lock
 .PHONY: default
+
+Gemfile.lock: Gemfile
+	bundle install
+	touch @
 
 features/%.json: features/%-unprocessed.json
 	cat $< | \
