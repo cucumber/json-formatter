@@ -21,3 +21,5 @@ jobs:
           ruby-version: '3.1'
       - run: make
       - run: gh release create v0.0.0 go/dist/*
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
