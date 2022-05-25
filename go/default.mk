@@ -10,7 +10,9 @@ EXE_BASE_NAME := cucumber-$(LIBNAME)
 LDFLAGS := "-X main.version=${NEW_VERSION}"
 
 # Enumerating Cross compilation targets
-PLATFORMS = darwin-amd64 linux-386 linux-amd64 linux-arm linux-arm64 freebsd-386 freebsd-amd64 openbsd-386 openbsd-amd64 windows-386 windows-amd64 freebsd-arm netbsd-386 netbsd-amd64 netbsd-arm
+# TODO: build for all platforms again
+# PLATFORMS = darwin-amd64 linux-386 linux-amd64 linux-arm linux-arm64 freebsd-386 freebsd-amd64 openbsd-386 openbsd-amd64 windows-386 windows-amd64 freebsd-arm netbsd-386 netbsd-amd64 netbsd-arm
+PLATFORMS = darwin-amd64 linux-386
 PLATFORM = $(patsubst dist/$(EXE_BASE_NAME)-%,%,$@)
 OS_ARCH = $(subst -, ,$(PLATFORM))
 X-OS = $(word 1, $(OS_ARCH))
