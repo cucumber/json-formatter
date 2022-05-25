@@ -1,4 +1,4 @@
-name: Build Go binaries and create Github release
+name: Release
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  test:
+  release:
     runs-on: ubuntu-latest
 
     steps:
