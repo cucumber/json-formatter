@@ -2,12 +2,7 @@ name: Release
 
 on:
   push:
-    branches:
-      - main
-      - fix/releases
-  pull_request:
-    branches:
-      - main
+    branches: [release/*]
 
 jobs:
   release:
@@ -22,6 +17,6 @@ jobs:
       - run: make
       - uses: cucumber/action-get-versions@v1.0.0
         id: versions
-      - run: gh release create ${{ steps.versions.outputs.changelog-latest-version }} go/dist/*
+      - run: gh release create v${{ steps.versions.outputs.changelog-latest-version }} go/dist/*
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
