@@ -1,3 +1,5 @@
+[![Build](https://github.com/cucumber/json-formatter/actions/workflows/test.yaml/badge.svg)](https://github.com/cucumber/json-formatter/actions/workflows/test.yaml)
+
 # Cucumber Standalone JSON Formatter
 
 This *standalone JSON Formatter* provide a language agnostic tool to convert [cucumber messages](../messages) into a JSON document.
