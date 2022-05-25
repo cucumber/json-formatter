@@ -20,5 +20,4 @@ jobs:
         with:
           ruby-version: '3.1'
       - run: make
-      - run: |
-        gh release create v0.0.0 go/dist/*
+      - run: gh release create v0.0.0 go/dist/*
