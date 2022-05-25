@@ -1,4 +1,4 @@
-name: Build Go binaries and test
+name: Test
 
 on:
   push:

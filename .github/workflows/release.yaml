@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    branches: [release/*]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - run: make
+      - uses: cucumber/action-get-versions@v1.0.0
+        id: versions
+      - run: gh release create v${{ steps.versions.outputs.changelog-latest-version }} go/dist/*
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
