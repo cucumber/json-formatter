@@ -20,7 +20,7 @@ jobs:
         with:
           ruby-version: '3.1'
       - run: make
-      - uses: cucumber/action-get-versions@v1
+      - uses: cucumber/action-get-versions@v1.0.0
         id: versions
       - run: gh release create ${{ steps.versions.outputs.changelog-latest-version }} go/dist/*
         env:
