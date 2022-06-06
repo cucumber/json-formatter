@@ -1,9 +1,9 @@
 default:
-	cd ruby-testdata && make
+	cd testdata && make
 	cd go && make
 
 clean:
-	cd ruby-testdata && make clean
+	cd testdata && make clean
 	cd go && make clean
 
 .PHONY: default clean
