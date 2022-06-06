@@ -2,12 +2,12 @@
 
 # Cucumber Standalone JSON Formatter
 
-This *standalone JSON Formatter* provides a language agnostic tool to convert [cucumber messages]([../messages](https://github.com/cucumber/common/tree/main/messages#readme)) into a JSON document.
+This *standalone JSON Formatter* provides a language agnostic tool to convert [cucumber messages](https://github.com/cucumber/common/tree/main/messages#readme) into a JSON document.
 
 ## Installation
 
 The Standalone JSON Formatter is a prebuilt executable. (It's written in Go).
-It can be downloaded from [GitHub Releases]([https://github.com/cucumber/common/releases/tag/json-formatter%2Fgo%2Fv19.0.0](https://github.com/cucumber/json-formatter/releases/tag/v19.0.0))
+It can be downloaded from [GitHub Releases](https://github.com/cucumber/json-formatter/releases/tag/v19.0.0)
 where you'll find executables for various operating systems and CPU architectures.
 
 ### MacOS
