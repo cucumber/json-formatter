@@ -22,7 +22,7 @@ At the last step, you may get a security warning from MacOS. If you do, open *Sy
 
 ### Windows
 
-* Download `cucumber-json-formatter-windows-amd64.exe` and rename it to `cucumber-json-formatter`
+* Download `cucumber-json-formatter-windows-amd64` and rename it to `cucumber-json-formatter.exe`
 * Move it to a directory that's on your `PATH`
 * Verify that you can run it: `cucumber-json-formatter --help`
 
