@@ -1,6 +1,6 @@
 module github.com/cucumber/common/json-formatter/go/v19
 
-go 1.13
+go 1.19
 
 require (
 	github.com/cucumber/common/messages/go/v18 v18.0.0
