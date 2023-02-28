@@ -6,7 +6,7 @@ require (
 	github.com/cucumber/common/messages/go/v18 v18.0.0
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/ginkgo/v2 v2.8.4
-	github.com/onsi/gomega v1.27.1
+	github.com/onsi/gomega v1.27.2
 )
 
 require (
