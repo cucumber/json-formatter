@@ -146,19 +146,19 @@ Upgrade messages
 [19.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v18.0.0...json-formatter/v19.0.0
 [18.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v17.0.2...json-formatter/v18.0.0
 [17.0.2]:      https://github.com/cucumber/cucumber/compare/json-formatter/v7.0.1...json-formatter/v17.0.2
-[7.0.1]:      https://github.com/cucumber/cucumber/compare/json-formatter/v7.0.0...json-formatter/v7.0.1
-[7.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v6.0.0...json-formatter/v7.0.0
-[6.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v5.1.0...json-formatter/v6.0.0
-[5.1.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v5.0.0...json-formatter/v5.1.0
-[5.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v4.0.0...json-formatter/v5.0.0
-[4.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v3.1.1...json-formatter/v4.0.0
-[3.1.1]:      https://github.com/cucumber/cucumber/compare/json-formatter/v3.1.0...json-formatter/v3.1.1
-[3.1.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v3.0.0...json-formatter/v3.1.0
-[3.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v2.2.0...json-formatter/v3.0.0
-[2.2.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v2.1.0...json-formatter/v2.2.0
-[2.1.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v2.0.0...json-formatter/v2.1.0
-[2.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v1.0.0...json-formatter/v2.0.0
-[1.0.0]:      https://github.com/cucumber/cucumber/releases/tag/json-formatter/v1.0.0
+[7.0.1]:       https://github.com/cucumber/cucumber/compare/json-formatter/v7.0.0...json-formatter/v7.0.1
+[7.0.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v6.0.0...json-formatter/v7.0.0
+[6.0.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v5.1.0...json-formatter/v6.0.0
+[5.1.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v5.0.0...json-formatter/v5.1.0
+[5.0.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v4.0.0...json-formatter/v5.0.0
+[4.0.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v3.1.1...json-formatter/v4.0.0
+[3.1.1]:       https://github.com/cucumber/cucumber/compare/json-formatter/v3.1.0...json-formatter/v3.1.1
+[3.1.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v3.0.0...json-formatter/v3.1.0
+[3.0.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v2.2.0...json-formatter/v3.0.0
+[2.2.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v2.1.0...json-formatter/v2.2.0
+[2.1.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v2.0.0...json-formatter/v2.1.0
+[2.0.0]:       https://github.com/cucumber/cucumber/compare/json-formatter/v1.0.0...json-formatter/v2.0.0
+[1.0.0]:       https://github.com/cucumber/cucumber/releases/tag/json-formatter/v1.0.0
 
 <!-- Contributors -->
 [aslakhellesoy]:    https://github.com/aslakhellesoy
