@@ -142,7 +142,7 @@ Upgrade messages
 * Initial release
 
 <!-- Releases -->
-[Unreleased]: https://github.com/cucumber/cucumber/compare/json-formatter/v19.0.0...main
+[Unreleased]: https://github.com/cucumber/json-formatter/compare/v19.0.0...HEAD
 [19.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v18.0.0...json-formatter/v19.0.0
 [18.0.0]:      https://github.com/cucumber/cucumber/compare/json-formatter/v17.0.2...json-formatter/v18.0.0
 [17.0.2]:      https://github.com/cucumber/cucumber/compare/json-formatter/v7.0.1...json-formatter/v17.0.2
