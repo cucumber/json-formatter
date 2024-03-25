@@ -5,6 +5,6 @@ source "https://rubygems.org"
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "cucumber", "~> 8.0.0"
-gem "cucumber-compatibility-kit", "~> 9.0"
+gem "cucumber-compatibility-kit", "~> 15.0"
 gem "json"
 gem "rspec"
