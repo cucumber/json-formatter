@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/cucumber/common/messages/go/v18 v18.0.0
 	github.com/onsi/ginkgo v1.16.5
-	github.com/onsi/ginkgo/v2 v2.20.0
+	github.com/onsi/ginkgo/v2 v2.20.1
 	github.com/onsi/gomega v1.34.1
 )
 
