@@ -2,7 +2,7 @@ module github.com/cucumber/common/json-formatter/go/v19
 
 go 1.22
 
-toolchain go1.23.0
+toolchain go1.23.1
 
 require (
 	github.com/cucumber/common/messages/go/v18 v18.0.0
