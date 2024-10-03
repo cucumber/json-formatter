@@ -1,5 +1,6 @@
 github.com/cucumber/common/messages/go/v18 v18.0.0 h1:kULVfV8id18KOOfzWVrCNIXnkf4TsRPXkgyqr2Dnoec=
 github.com/cucumber/common/messages/go/v18 v18.0.0/go.mod h1:Q7nbIcCQXw3gWXVjuNHVTU6uIBIwUsN1mOEbxD+oSvA=
+github.com/cucumber/common/messages/go/v19 v19.1.2/go.mod h1:0KLDvMVmmkEZcWUSKxFHSUSLS1gjujBbPN0p41IwwJ4=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
