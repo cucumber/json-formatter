@@ -8,7 +8,7 @@ require (
 	github.com/cucumber/common/messages/go/v18 v18.0.0
 	github.com/cucumber/common/messages/go/v19 v19.1.2
 	github.com/onsi/ginkgo v1.16.5
-	github.com/onsi/ginkgo/v2 v2.23.2
+	github.com/onsi/ginkgo/v2 v2.23.3
 	github.com/onsi/gomega v1.36.2
 )
 
