@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.24.4
 
 require (
-	github.com/cucumber/common/messages/go/v18 v18.0.0
+	github.com/cucumber/common/messages/go/v19 v19.1.2
 	github.com/cucumber/common/messages/go/v19 v19.1.2
 	github.com/onsi/ginkgo v1.16.5
 	github.com/onsi/ginkgo/v2 v2.23.4
