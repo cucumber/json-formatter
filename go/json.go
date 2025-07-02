@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/cucumber/common/messages/go/v18"
+	"github.com/cucumber/common/messages/go/v19"
 )
 
 type Formatter struct {
